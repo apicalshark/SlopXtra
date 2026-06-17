@@ -1,12 +1,20 @@
-# LineXtra
+# SlopXtra
 
-[![Release](https://img.shields.io/github/v/release/yagiyuu/LineXtra?label=Release)](https://github.com/yagiyuu/LineXtra/releases/latest)
-[![Download](https://img.shields.io/github/downloads/yagiyuu/LineXtra/total)](https://github.com/yagiyuu/LineXtra/releases/latest)
+Against enshittification
 
 An Xposed module that supports LSPatch and is compatible with all versions
 
-LSPatchをサポートし、すべてのバージョンに対応するXposedモジュール
+## Features
 
-## Features / 機能
-- Remove ads / 広告の削除
-- Remove tabs / タブの削除
+- Remove ads
+  - Smart Channel, Home, Timeline, Album, Wallet, Open Chat, GCS (v1 + v2)
+  - Google AdMob NativeAdView blocked
+  - Taboola WebView-based ad activity blocked
+- Remove tabs (VOOM, News, Wallet)
+
+## Build
+
+```bash
+# Use docker
+./build-docker.sh
+```
